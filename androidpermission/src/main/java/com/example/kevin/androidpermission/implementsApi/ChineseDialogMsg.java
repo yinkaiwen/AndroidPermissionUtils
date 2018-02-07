@@ -1,4 +1,4 @@
-package com.example.kevin.androidpermission.request;
+package com.example.kevin.androidpermission.implementsApi;
 
 import com.example.kevin.androidpermission.DangerousPermissions;
 import com.example.kevin.androidpermission.api.DialogMsg;

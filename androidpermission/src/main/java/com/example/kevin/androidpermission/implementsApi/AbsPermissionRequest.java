@@ -1,4 +1,4 @@
-package com.example.kevin.androidpermission.request;
+package com.example.kevin.androidpermission.implementsApi;
 
 import android.app.Activity;
 import android.content.pm.PackageManager;

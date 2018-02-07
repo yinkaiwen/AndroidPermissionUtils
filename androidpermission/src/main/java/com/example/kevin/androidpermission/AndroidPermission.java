@@ -3,8 +3,8 @@ package com.example.kevin.androidpermission;
 import android.app.Activity;
 import android.os.Build;
 
-import com.example.kevin.androidpermission.request.LowRequestFactory;
-import com.example.kevin.androidpermission.request.MRequestFactory;
+import com.example.kevin.androidpermission.implementsApi.LowRequestFactory;
+import com.example.kevin.androidpermission.implementsApi.MRequestFactory;
 import com.example.kevin.androidpermission.api.PermissionRequest;
 import com.example.kevin.androidpermission.api.RequestFactory;
 

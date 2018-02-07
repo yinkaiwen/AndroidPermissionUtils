@@ -3,7 +3,7 @@ package com.example.kevin.androidpermission;
 import android.content.res.Resources;
 
 import com.example.kevin.androidpermission.api.DialogMsg;
-import com.example.kevin.androidpermission.request.ChineseDialogMsg;
+import com.example.kevin.androidpermission.implementsApi.ChineseDialogMsg;
 
 /**
  * Created by kevin on 2018/2/6.
