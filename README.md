@@ -19,5 +19,5 @@ AndroidPermission.from(this)
         })
         .start();
 ```
- This gif is showing the demo that SDK lower than 23.
+ This gif is showing the demo that SDK lower than 23.</br>
 ![image](https://github.com/yinkaiwen/AndroidPermissionUtils/raw/master/test.gif)
