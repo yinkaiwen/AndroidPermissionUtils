@@ -151,7 +151,7 @@ public class PermissionActivity extends Activity {
     }
 
     private void showSelfDialog(final String[] permissions) {
-        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this,AlertDialog.THEME_HOLO_LIGHT);
         dialog.setMessage(getMsg(permissions))
                 .setPositiveButton(R.string.positive, new DialogInterface.OnClickListener() {
                     @Override
