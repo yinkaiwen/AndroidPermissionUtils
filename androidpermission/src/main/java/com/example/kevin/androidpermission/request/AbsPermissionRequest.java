@@ -57,7 +57,7 @@ public abstract class AbsPermissionRequest implements PermissionRequest {
     @Override
     public void start() {
         if(mPermissions == null){
-            throw new IllegalArgumentException("You should use permissions() method before use this.");
+            throw new IllegalArgumentException("You should use {permissions(String... permissions)} method before use this method.");
         }
         PermissionActivity.requestPermissionsByPermissionActivity(mActivity, mPermissions, this);
     }
