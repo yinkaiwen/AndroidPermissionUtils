@@ -29,7 +29,7 @@ public class NormalPermissionTestActivity extends Activity implements View.OnCli
 
     private static final int MY_PERMISSIONS_REQUEST_READ_CALENDAR = 100;
     private static final int CONTACT_GROUP = 101;
-    public static final String UID = "serialVersionUID";
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

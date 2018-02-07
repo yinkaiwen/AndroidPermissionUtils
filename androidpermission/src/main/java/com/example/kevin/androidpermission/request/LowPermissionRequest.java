@@ -13,25 +13,10 @@ import com.example.kevin.androidpermission.api.PermissionRequest;
  * https://github.com/yinkaiwen
  */
 
-public class LowPermissionRequest extends AbsPermissionRequest {
-
-    private Activity mActivity;
-    private String[] mPermissions;
+class LowPermissionRequest extends AbsPermissionRequest {
 
     LowPermissionRequest(Activity activity) {
         mActivity = activity;
     }
-
-    @Override
-    public PermissionRequest permissions(String... permissions) {
-        mPermissions = permissions;
-        return this;
-    }
-
-    @Override
-    public void start() {
-        PermissionActivity.requestPermissionsByPermissionActivity(mActivity, mPermissions, this);
-    }
-
 
 }

@@ -1,8 +1,10 @@
 package com.example.kevin.androidpermission.request;
 
+import android.app.Activity;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 
+import com.example.kevin.androidpermission.PermissionActivity;
 import com.example.kevin.androidpermission.api.DeniedCallBack;
 import com.example.kevin.androidpermission.api.GrantedCallBack;
 import com.example.kevin.androidpermission.api.PermissionRequest;
@@ -15,6 +17,14 @@ import com.example.kevin.androidpermission.api.PermissionRequest;
 public abstract class AbsPermissionRequest implements PermissionRequest {
     DeniedCallBack mDeniedCallBack;
     GrantedCallBack mGrantedCallBack;
+    Activity mActivity;
+    private String[] mPermissions;
+
+    @Override
+    public PermissionRequest permissions(String... permissions) {
+        mPermissions = permissions;
+        return this;
+    }
 
     @Override
     public PermissionRequest setDeniedCallBack(DeniedCallBack deniedCallBack) {
@@ -42,5 +52,10 @@ public abstract class AbsPermissionRequest implements PermissionRequest {
                 }
             }
         }
+    }
+
+    @Override
+    public void start() {
+        PermissionActivity.requestPermissionsByPermissionActivity(mActivity, mPermissions, this);
     }
 }

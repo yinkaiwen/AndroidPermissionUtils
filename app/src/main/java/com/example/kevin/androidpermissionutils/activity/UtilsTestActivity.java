@@ -18,6 +18,7 @@ import com.example.kevin.androidpermissionutils.other.ToastUtils;
  */
 
 public class UtilsTestActivity extends Activity implements View.OnClickListener {
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,22 +43,29 @@ public class UtilsTestActivity extends Activity implements View.OnClickListener 
         }
     }
 
-
     private void requestPermission(String... permissions) {
         AndroidPermission.from(this)
                 .permissions(permissions)
                 .setDeniedCallBack(new DeniedCallBack() {
                     @Override
                     public void denied() {
-                        ToastUtils.toast("fail");
+                        afterDenied();
                     }
                 })
                 .setGrantedCallBack(new GrantedCallBack() {
                     @Override
                     public void granted() {
-                        ToastUtils.toast("success");
+                        afterSuccess();
                     }
                 })
                 .start();
+    }
+
+    private void afterSuccess(){
+        ToastUtils.toast("success");
+    }
+
+    private void afterDenied(){
+        ToastUtils.toast("denied");
     }
 }

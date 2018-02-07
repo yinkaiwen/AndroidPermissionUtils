@@ -16,24 +16,10 @@ import com.example.kevin.androidpermission.api.PermissionRequest;
  * https://github.com/yinkaiwen
  */
 @RequiresApi(api = Build.VERSION_CODES.M)
-public class MPermissionRequest extends AbsPermissionRequest {
-
-    private Activity mActivity;
-    private String[] mPermissions;
+class MPermissionRequest extends AbsPermissionRequest {
 
     MPermissionRequest(Activity activity) {
         mActivity = activity;
-    }
-
-    @Override
-    public PermissionRequest permissions(String... permissions) {
-        mPermissions = permissions;
-        return this;
-    }
-
-    @Override
-    public void start() {
-        PermissionActivity.requestPermissionsByPermissionActivity(mActivity, mPermissions, this);
     }
 
 }
