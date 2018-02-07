@@ -19,3 +19,4 @@ AndroidPermission.from(this)
         })
         .start();
 ```
+![image](https://github.com/yinkaiwen/AndroidPermissionUtils/raw/master/test.gif)
