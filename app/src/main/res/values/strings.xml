@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AndroidPermissionUtils</string>
+    <string name="check_permission">check_calendar</string>
+    <string name="normal_permission_test">normal_permission_test</string>
+    <string name="request_calendar_permission">request_calendar_permission</string>
+    <string name="btn_request_contact_group">btn_request_contact_group</string>
+    <string name="test_utils">test_utils</string>
 </resources>

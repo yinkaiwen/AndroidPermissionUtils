@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">安卓权限测试</string>
+    <string name="positive">允许</string>
+    <string name="negative">拒绝</string>
+    <string name="msg1">要允许\n</string>
+    <string name="msg2">使用以下权限吗？\n</string>
+</resources>

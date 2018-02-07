@@ -5,15 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kevin.androidpermissionutils.MainActivity">
+    tools:context="com.example.kevin.androidpermissionutils.activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+        android:id="@+id/btn_normal_permission"
+        style="@style/ButtonStyle"
+        android:text="@string/normal_permission_test"/>
+
+    <Button
+        android:id="@+id/test_utils"
+        style="@style/ButtonStyle"
+        android:text="@string/test_utils"
+        app:layout_constraintTop_toBottomOf="@id/btn_normal_permission"/>
 
 </android.support.constraint.ConstraintLayout>

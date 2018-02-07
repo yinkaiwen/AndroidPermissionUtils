@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_test1"
+        style="@style/ButtonStyle"
+        android:text="@string/request_calendar_permission"/>
+
+    <Button
+        android:id="@+id/btn_test2"
+        style="@style/ButtonStyle"
+        android:text="@string/btn_request_contact_group"
+        app:layout_constraintTop_toBottomOf="@id/btn_test1"/>
+
+</android.support.constraint.ConstraintLayout>

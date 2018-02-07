@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">androidpermission</string>
+    <string name="positive">grant</string>
+    <string name="negative">deny</string>
 </resources>
