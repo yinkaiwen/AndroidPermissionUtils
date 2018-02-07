@@ -15,10 +15,10 @@ import com.example.kevin.androidpermission.api.PermissionRequest;
  */
 
 public abstract class AbsPermissionRequest implements PermissionRequest {
-    DeniedCallBack mDeniedCallBack;
-    GrantedCallBack mGrantedCallBack;
-    Activity mActivity;
+    private DeniedCallBack mDeniedCallBack;
+    private GrantedCallBack mGrantedCallBack;
     private String[] mPermissions;
+    Activity mActivity;
 
     @Override
     public PermissionRequest permissions(String... permissions) {
@@ -56,6 +56,9 @@ public abstract class AbsPermissionRequest implements PermissionRequest {
 
     @Override
     public void start() {
+        if(mPermissions == null){
+            throw new IllegalArgumentException("You should use permissions() method before use this.");
+        }
         PermissionActivity.requestPermissionsByPermissionActivity(mActivity, mPermissions, this);
     }
 }
