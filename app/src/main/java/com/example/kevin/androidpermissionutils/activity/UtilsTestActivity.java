@@ -61,11 +61,11 @@ public class UtilsTestActivity extends Activity implements View.OnClickListener 
                 .start();
     }
 
-    private void afterSuccess(){
+    private void afterSuccess() {
         ToastUtils.toast("success");
     }
 
-    private void afterDenied(){
+    private void afterDenied() {
         ToastUtils.toast("denied");
     }
 }
